@@ -65,20 +65,36 @@
 
 
 /* Query Selector */
-var header = document.querySelector('#main-header');
-header.style.borderBottom = 'solid 3px red';
+// var header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 3px red';
 
-var input = document.querySelector('input');
-input.value = 'Bella Ciao';
+// var input = document.querySelector('input');
+// input.value = 'Bella Ciao';
 
-var submit = document.querySelector('input[type="submit"]');
-submit.value = 'Send';
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value = 'Send';
 
-var item = document.querySelector('.list-group-item');
-item.style.color = 'pink';
+// var item = document.querySelector('.list-group-item');
+// item.style.color = 'pink';
 
-var secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.color = 'red';
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.color = 'red';
 
-var lastItem = document.querySelector('.list-group-item:last-child');
-lastItem.style.color = 'blue';
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue';
+
+
+
+
+/* Query Selector All*/
+var titles = document.querySelectorAll('.title');
+
+console.log(titles);
+titles[0].textContent = 'Bella Ciao';
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
+for(let i = 0; i<odd.length; i++){
+    odd[i].style.backgroundColor = 'lightgray'; 
+    even[i].style.backgroundColor = 'gray'; 
+}

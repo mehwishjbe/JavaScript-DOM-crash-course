@@ -113,7 +113,29 @@
 
 
 /* PARENT ELEMENT */
+// var itemList = document.querySelector('#items');
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = 'lightgray';
+// console.log(itemList.parentElement.parentElement.parentElement);
+
+
+
+
+/* CHILD NODE */
 var itemList = document.querySelector('#items');
-console.log(itemList.parentElement);
-itemList.parentElement.style.backgroundColor = 'lightgray';
-console.log(itemList.parentElement.parentElement.parentElement);
+// console.log(itemList.childNodes);
+console.log(itemList.children);
+console.log(itemList.children[1]);
+itemList.children[1].backgroundColor = 'yellow';
+
+// FirstChild
+console.log(itemList.firstChild);
+// FirstElementChild
+console.log(itemList.firstElementChild);
+itemList.firstElementChild.textContent = 'Nihao';
+
+// LastChild
+console.log(itemList.lastChild);
+// LastElementChild
+console.log(itemList.lastElementChild);
+itemList.lastElementChild.textContent = 'Wallah';

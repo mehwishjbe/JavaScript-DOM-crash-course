@@ -149,3 +149,10 @@
 // console.log(itemList.nextSibling);
 // // next sibling element
 // console.log(itemList.nextElementSibling);
+
+/* previous sibling */
+var itemList = document.querySelector('#items');
+console.log(itemList.previousSibling);
+// previous sibling Element
+console.log(itemList.previousElementSibling);
+itemList.previousElementSibling.style.color = 'green'; 

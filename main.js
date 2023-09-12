@@ -151,8 +151,33 @@
 // console.log(itemList.nextElementSibling);
 
 /* previous sibling */
-var itemList = document.querySelector('#items');
-console.log(itemList.previousSibling);
-// previous sibling Element
-console.log(itemList.previousElementSibling);
-itemList.previousElementSibling.style.color = 'green'; 
+// var itemList = document.querySelector('#items');
+// console.log(itemList.previousSibling);
+// // previous sibling Element
+// console.log(itemList.previousElementSibling);
+// itemList.previousElementSibling.style.color = 'green'; 
+
+
+
+
+
+/* CREATE ELEMENT */
+// creating div
+var newDiv = document.createElement('div');
+// setting div's class name
+newDiv.className = 'hello';
+// setting div's id name
+newDiv.id = 'hello-id';
+// setting div's attribute
+newDiv.setAttribute('title','title div');
+// creating text for div
+var newDivtext = document.createTextNode('hello world');
+// creating text for div
+newDiv.appendChild(newDivtext);
+// adding this div to DOM
+var containero = document.querySelector('header .container-');
+var h1 = document.querySelector('header h1' );
+containero.insertBefore(newDiv, h1)
+
+newDiv.style.fontSize = '15px'
+// console.log(newDiv);

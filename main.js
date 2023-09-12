@@ -50,14 +50,35 @@
 
 
 /* getElementsByTagName */
-var li = document.getElementsByTagName('li');
-console.log(li);
-console.log(li[1]);
-li[1].innerText = 'Item Ciao'
-li[1].style.color = 'red'
-li[1].style.fontWeight = 'bold'
-li[1].style.backgroundColor = 'yellow'
+// var li = document.getElementsByTagName('li');
+// console.log(li);
+// console.log(li[1]);
+// li[1].innerText = 'Item Ciao'
+// li[1].style.color = 'red'
+// li[1].style.fontWeight = 'bold'
+// li[1].style.backgroundColor = 'yellow'
 
-for(let i = 0; i<li.length; i++){
-    li[i].style.backgroundColor = 'gray';
-}
+// for(let i = 0; i<li.length; i++){
+//     li[i].style.backgroundColor = 'gray';
+// }
+
+
+
+/* Query Selector */
+var header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 3px red';
+
+var input = document.querySelector('input');
+input.value = 'Bella Ciao';
+
+var submit = document.querySelector('input[type="submit"]');
+submit.value = 'Send';
+
+var item = document.querySelector('.list-group-item');
+item.style.color = 'pink';
+
+var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.color = 'red';
+
+var lastItem = document.querySelector('.list-group-item:last-child');
+lastItem.style.color = 'blue';

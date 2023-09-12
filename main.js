@@ -103,8 +103,17 @@
 
 
 
-/* PARENT */
+/* PARENT NODE */
+// var itemList = document.querySelector('#items');
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = 'lightgray';
+// console.log(itemList.parentNode.parentNode.parentNode);
+
+
+
+
+/* PARENT ELEMENT */
 var itemList = document.querySelector('#items');
-console.log(itemList.parentNode);
-itemList.parentNode.style.backgroundColor = 'lightgray';
-console.log(itemList.parentNode.parentNode.parentNode);
+console.log(itemList.parentElement);
+itemList.parentElement.style.backgroundColor = 'lightgray';
+console.log(itemList.parentElement.parentElement.parentElement);

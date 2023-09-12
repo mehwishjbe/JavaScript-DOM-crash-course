@@ -23,3 +23,9 @@
 // headerTitle.textContent = 'hello';
 // headerTitle.innerText = 'bye bye';
 // headerTitle.innerHTML = '<h3>Ciao</h3>';
+
+// var headerTitle = document.getElementById('header-title');
+// headerTitle.style.borderBottom = 'solid 3px white'
+
+var header = document.getElementById('main-header');
+header.style.borderBottom = 'solid 3px darkgreen'

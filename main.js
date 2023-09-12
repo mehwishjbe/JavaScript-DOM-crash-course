@@ -122,20 +122,30 @@
 
 
 /* CHILD NODE */
-var itemList = document.querySelector('#items');
-// console.log(itemList.childNodes);
-console.log(itemList.children);
-console.log(itemList.children[1]);
-itemList.children[1].backgroundColor = 'yellow';
+// var itemList = document.querySelector('#items');
+// // console.log(itemList.childNodes);
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].backgroundColor = 'yellow';
 
-// FirstChild
-console.log(itemList.firstChild);
-// FirstElementChild
-console.log(itemList.firstElementChild);
-itemList.firstElementChild.textContent = 'Nihao';
+// // FirstChild
+// console.log(itemList.firstChild);
+// // FirstElementChild
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = 'Nihao';
 
-// LastChild
-console.log(itemList.lastChild);
-// LastElementChild
-console.log(itemList.lastElementChild);
-itemList.lastElementChild.textContent = 'Wallah';
+// // LastChild
+// console.log(itemList.lastChild);
+// // LastElementChild
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = 'Wallah';
+
+
+
+
+
+/* next sibling */
+// var itemList = document.querySelector('#items');
+// console.log(itemList.nextSibling);
+// // next sibling element
+// console.log(itemList.nextElementSibling);

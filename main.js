@@ -64,6 +64,7 @@
 
 
 
+
 /* Query Selector */
 // var header = document.querySelector('#main-header');
 // header.style.borderBottom = 'solid 3px red';
@@ -87,14 +88,23 @@
 
 
 /* Query Selector All*/
-var titles = document.querySelectorAll('.title');
+// var titles = document.querySelectorAll('.title');
 
-console.log(titles);
-titles[0].textContent = 'Bella Ciao';
+// console.log(titles);
+// titles[0].textContent = 'Bella Ciao';
 
-var odd = document.querySelectorAll('li:nth-child(odd)');
-var even = document.querySelectorAll('li:nth-child(even)');
-for(let i = 0; i<odd.length; i++){
-    odd[i].style.backgroundColor = 'lightgray'; 
-    even[i].style.backgroundColor = 'gray'; 
-}
+// var odd = document.querySelectorAll('li:nth-child(odd)');
+// var even = document.querySelectorAll('li:nth-child(even)');
+// for(let i = 0; i<odd.length; i++){
+//     odd[i].style.backgroundColor = 'lightgray'; 
+//     even[i].style.backgroundColor = 'gray'; 
+// }
+
+
+
+
+/* PARENT */
+var itemList = document.querySelector('#items');
+console.log(itemList.parentNode);
+itemList.parentNode.style.backgroundColor = 'lightgray';
+console.log(itemList.parentNode.parentNode.parentNode);

@@ -4,15 +4,29 @@
     box-sizing: border-box;
 }
 
-.head{
-    width: 100%;
-    height: 200px;
-    background-color: rgb(211, 208, 208);
-    border-bottom: 2px solid black;
+body{
+    margin: auto;
 }
 
-h1{
+#main-header{
+    background-color: green;
+    height: 80px;
     text-align: center;
-    padding-top: 70px;
-    color: grey;
+    padding-top: 20px;
+    color: white;
+}
+
+.container{
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+li{
+    border: 1px solid gray;
 }

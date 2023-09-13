@@ -243,11 +243,20 @@ function runEvent(e){
 
 var box = document.getElementById('box');
 // box.addEventListener('mouseenter', runEvent);
-box.addEventListener('mouseleave', runEvent);
-box.addEventListener('mouseover', runEvent);
-box.addEventListener('mouseout', runEvent);
+// box.addEventListener('mouseleave', runEvent);
+// box.addEventListener('mouseover', runEvent);
+// box.addEventListener('mouseout', runEvent);
+ box.addEventListener('mousemove', runEvent);
+
+
 
 function runEvent(e){
     console.log('Event type:' + e.type);
+
+    var red = e.offsetX;
+    var green = e.offsetY;
+    var blue = 40;
+    // box.style.backgroundColor= "rgb("+e.offsetX+ ","+e.offsetY+",40)";
+    box.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
     
 } 

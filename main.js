@@ -200,15 +200,19 @@ function onClick(){
 }
 
 function onClick(e){
-    console.log(e);
-    console.log(e.target);
-    console.log(e.target.id);
+    // console.log(e);
+    // console.log(e.target);
+    // console.log(e.target.id);
 
-    console.log(e.type);
-    console.log(e.clientX);
-    console.log(e.clientY);
-    console.log(e.offsetX);
-    console.log(e.offsetY);
+    // console.log(e.type);
+    // console.log(e.clientX);
+    // console.log(e.clientY);
+    // console.log(e.offsetX);
+    // console.log(e.offsetY);
+
+    // console.log(e.altKey);
+    // console.log(e.ctrlKey);
+    // console.log(e.shiftKey);
     
 }
 

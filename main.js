@@ -199,6 +199,13 @@ function onClick(){
     document.getElementById('button').textContent = 'Changed';
 }
 
+function onClick(e){
+    console.log(e);
+    console.log(e.target);
+    console.log(e.target.id);
+    
+}
+
 var buttonbtn = document.getElementById('buttonbtn');
 buttonbtn.addEventListener('click', onClicksubmit);
 

@@ -230,7 +230,7 @@ buttonbtn.addEventListener('click', onClicksubmit); */
     }, 0.001);
 } */
 
-var button = document.getElementById('button');
+/* var button = document.getElementById('button');
 // button.addEventListener('click', runEvent);
 // button.addEventListener('dblclick', runEvent);
 // button.addEventListener('mousedown', runEvent);
@@ -239,4 +239,15 @@ button.addEventListener('mouseup', runEvent);
 function runEvent(e){
     console.log('Event type:' + e.type);
     
-}
+} */
+
+var box = document.getElementById('box');
+// box.addEventListener('mouseenter', runEvent);
+box.addEventListener('mouseleave', runEvent);
+box.addEventListener('mouseover', runEvent);
+box.addEventListener('mouseout', runEvent);
+
+function runEvent(e){
+    console.log('Event type:' + e.type);
+    
+} 

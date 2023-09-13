@@ -162,22 +162,40 @@
 
 
 /* CREATE ELEMENT */
-// creating div
-var newDiv = document.createElement('div');
-// setting div's class name
-newDiv.className = 'hello';
-// setting div's id name
-newDiv.id = 'hello-id';
-// setting div's attribute
-newDiv.setAttribute('title','title div');
-// creating text for div
-var newDivtext = document.createTextNode('hello world');
-// creating text for div
-newDiv.appendChild(newDivtext);
-// adding this div to DOM
-var containero = document.querySelector('header .container-');
-var h1 = document.querySelector('header h1' );
-containero.insertBefore(newDiv, h1)
+// // creating div
+// var newDiv = document.createElement('div');
+// // setting div's class name
+// newDiv.className = 'hello';
+// // setting div's id name
+// newDiv.id = 'hello-id';
+// // setting div's attribute
+// newDiv.setAttribute('title','title div');
+// // creating text for div
+// var newDivtext = document.createTextNode('hello world');
+// // creating text for div
+// newDiv.appendChild(newDivtext);
+// // adding this div to DOM
+// var containero = document.querySelector('header .container-');
+// var h1 = document.querySelector('header h1' );
+// containero.insertBefore(newDiv, h1)
 
-newDiv.style.fontSize = '15px'
-// console.log(newDiv);
+// newDiv.style.fontSize = '15px'
+// // console.log(newDiv);
+
+
+
+
+/* EVENT LISTENERS */
+/* var button = document.getElementById('button').addEventListener
+('click', function(){
+    console.log(123);
+}); */
+
+var button = document.getElementById('button').addEventListener
+('click', onClick);
+
+function onClick(){
+    console.log('Button Clicked');
+    document.getElementById('button').textContent = 'Changed';
+}
+

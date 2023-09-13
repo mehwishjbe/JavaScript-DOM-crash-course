@@ -199,3 +199,16 @@ function onClick(){
     document.getElementById('button').textContent = 'Changed';
 }
 
+var buttonbtn = document.getElementById('buttonbtn');
+buttonbtn.addEventListener('click', onClicksubmit);
+
+function onClicksubmit(){
+    console.log('Button Clicked');
+    buttonbtn.textContent = 'Submitted';
+
+    buttonbtn.disabled = true;
+
+    setTimeout(function(){
+        buttonbtn.disabled = false;
+    }, 0.001);
+}

@@ -191,15 +191,15 @@
     console.log(123);
 }); */
 
-var button = document.getElementById('button').addEventListener
-('click', onClick);
+/* var button = document.getElementById('button').addEventListener
+('click', onClick); */
 
-function onClick(){
+/* function onClick(){
     console.log('Button Clicked');
     document.getElementById('button').textContent = 'Changed';
-}
+} */
 
-function onClick(e){
+/* function onClick(e){
     // console.log(e);
     // console.log(e.target);
     // console.log(e.target.id);
@@ -214,12 +214,12 @@ function onClick(e){
     // console.log(e.ctrlKey);
     // console.log(e.shiftKey);
     
-}
+} */
 
-var buttonbtn = document.getElementById('buttonbtn');
-buttonbtn.addEventListener('click', onClicksubmit);
+/* var buttonbtn = document.getElementById('buttonbtn');
+buttonbtn.addEventListener('click', onClicksubmit); */
 
-function onClicksubmit(){
+/* function onClicksubmit(){
     console.log('Button Clicked');
     buttonbtn.textContent = 'Submitted';
 
@@ -228,4 +228,15 @@ function onClicksubmit(){
     setTimeout(function(){
         buttonbtn.disabled = false;
     }, 0.001);
+} */
+
+var button = document.getElementById('button');
+// button.addEventListener('click', runEvent);
+// button.addEventListener('dblclick', runEvent);
+// button.addEventListener('mousedown', runEvent);
+button.addEventListener('mouseup', runEvent);
+
+function runEvent(e){
+    console.log('Event type:' + e.type);
+    
 }

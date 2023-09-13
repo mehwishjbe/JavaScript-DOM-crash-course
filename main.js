@@ -185,7 +185,8 @@
 
 
 
-/* EVENT LISTENERS */
+/* EVENT CLICK LISTENERS */
+
 /* var button = document.getElementById('button').addEventListener
 ('click', function(){
     console.log(123);
@@ -230,6 +231,10 @@ buttonbtn.addEventListener('click', onClicksubmit); */
     }, 0.001);
 } */
 
+
+
+/* MOUSE EVENTS */
+
 /* var button = document.getElementById('button');
 // button.addEventListener('click', runEvent);
 // button.addEventListener('dblclick', runEvent);
@@ -241,16 +246,16 @@ function runEvent(e){
     
 } */
 
-var box = document.getElementById('box');
+/* var box = document.getElementById('box');
 // box.addEventListener('mouseenter', runEvent);
 // box.addEventListener('mouseleave', runEvent);
 // box.addEventListener('mouseover', runEvent);
 // box.addEventListener('mouseout', runEvent);
- box.addEventListener('mousemove', runEvent);
+ box.addEventListener('mousemove', runEvent); */
 
 
 
-function runEvent(e){
+/* function runEvent(e){
     console.log('Event type:' + e.type);
 
     var red = e.offsetX;
@@ -258,5 +263,27 @@ function runEvent(e){
     var blue = 40;
     // box.style.backgroundColor= "rgb("+e.offsetX+ ","+e.offsetY+",40)";
     box.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
-    
-} 
+}  */
+
+
+
+
+/* INPUT EVENTS */
+var itemInput = document.querySelector('input[type="text"]');
+var form  = document.querySelector('form');
+
+// itemInput.addEventListener('keydown', runEvent);
+// itemInput.addEventListener('keyup', runEvent);
+// itemInput.addEventListener('keypress', runEvent);
+// itemInput.addEventListener('focus', runEvent);
+// itemInput.addEventListener('blur', runEvent);
+// itemInput.addEventListener('cut', runEvent);
+// itemInput.addEventListener('paste', runEvent);
+
+
+
+function runEvent(e){
+    console.log('Event type: '+ e.type);
+    // console.log(e.target.value);
+    // document.getElementById('output').innerHTML = '<h3>'+e.target.value+ '</h3>';
+}
